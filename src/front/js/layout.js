@@ -25,20 +25,20 @@ const Layout = () => {
 
 
     return (
-        <div className="w-75 mx-auto">
+        <div className='w-75 mx-auto'>
             <BrowserRouter basename={basename}>
                 <ScrollToTop>
                     <Navbar />
                     <Routes>
-
-                        <Route element={<ListMyCats />} path="/my-cats" />
-                        <Route element={<NewCat />} path="/new-cat" />
-                        <Route element={<Home />} path="/" />
-                        <Route element={<Login />} path="/login" />
+                        <Route element={<ListMyCats />} path='/my-cats' />
+                        <Route element={<NewCat />} path='/new-cat' />
+                        <Route element={<Home />} path='/' />
+                        <Route element={<Login />} path='/login' />
+                        <Route element={<SignUp />} path='/signUp' />
 
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
-                    <div className="fixed-bottom bg-light q">
+                    <div className='fixed-bottom bg-light q'>
                         <Footer />
                     </div>
                 </ScrollToTop>
